@@ -42,9 +42,12 @@
 
 
 let a;
+let p = document.querySelector('.number');
 
 function plus() {
     setTimeout("console.log(a)", 1000);
+
+    setTimeout("p.innerHTML = a;", 2000);
 }
 
 function getInput(callback) {
